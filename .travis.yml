@@ -1,8 +1,9 @@
+dist: xenial
 language: python
-python:
-- 3.7
-script:
-- black .
-- flake8
-after_script:
-- coveralls
+
+
+script: 
+  - pytest --flake8 
+
+after_success:
+  - coveralls
