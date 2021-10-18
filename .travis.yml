@@ -7,7 +7,7 @@ install:
   - pip install flake8
 
 script: 
-  - black --check *.py
+  - black --check 
   - pytest --flake8 
 
 after_success:
